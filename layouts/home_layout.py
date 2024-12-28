@@ -33,7 +33,7 @@ def home_layout():
                 ),
                 dbc.CardFooter(f"{len(cat062_files)} files found."),
                 ]),
-            style={"width": "20rem"},
+            style={"width": "18rem"},
             ),
 
     row_content_1 = dbc.Stack(
@@ -43,12 +43,13 @@ def home_layout():
         html.Div(cat062_card),
         ],
         direction="horizontal",
-        gap=5,
+        gap=2,
         ),
     
     cat062_stats_table = dbc.Table()
 
     return html.Div([
         dbc.Row(row_content_1,justify="center"),
+        html.Hr(),
         dbc.Row(cat062_stats_table,justify="center"),
         ])
