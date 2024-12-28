@@ -1,4 +1,4 @@
-import os, csv, glob, time, threading
+import os, csv, glob
 from datetime import datetime
 from tqdm import tqdm
 
@@ -58,4 +58,4 @@ def process_file(csv_file):
     print(f"Total rows in dataset: {out_filename} is {processed_row_count}")
 
 for file in glob.glob(pattern):
-    process_file(file)
+        process_file(file, update_callback)
